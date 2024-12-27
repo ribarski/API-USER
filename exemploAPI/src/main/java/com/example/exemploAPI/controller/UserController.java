@@ -1,17 +1,11 @@
 package com.example.exemploAPI.controller;
 
-
-
-
 import com.example.exemploAPI.entity.User;
 import com.example.exemploAPI.service.UserService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-
 import java.util.List;
 
 
@@ -33,7 +27,7 @@ public class UserController {
     }
 
     @PostMapping
-    public ResponseEntity<User> save(@RequestBody User user){
+    public ResponseEntity<?> save(@RequestBody User user){
         return ResponseEntity.ok(userService.save(user));
     }
 
@@ -48,6 +42,7 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         boolean isDeleted = userService.delete(id);
