@@ -1,4 +1,4 @@
-package factory.pack;
+package factory.currency;
 
 public class CurrencyFactory {
     public static Currency newCurrency(Country country) {

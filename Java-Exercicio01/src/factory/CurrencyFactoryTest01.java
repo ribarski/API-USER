@@ -1,8 +1,8 @@
 package factory;
 
-import factory.pack.Country;
-import factory.pack.Currency;
-import factory.pack.CurrencyFactory;
+import factory.currency.Country;
+import factory.currency.Currency;
+import factory.currency.CurrencyFactory;
 
 public class CurrencyFactoryTest01 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package factory.pack;
+package factory.currency;
 
 public interface Currency {
     String getSymbol();
