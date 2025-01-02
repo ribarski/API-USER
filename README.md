@@ -49,7 +49,7 @@ Objetivo: Classes derivadas devem ser substituíveis por suas classes base sem a
 Objetivo: Criar interfaces específicas em vez de interfaces genéricas.
 5. D - Princípio da Inversão de Dependência
 Objetivo: Depender de abstrações e não de implementações concretas.
-Spring Framework
+##Spring Framework
 Principais Anotações:
 @Entity: Define que a classe é uma entidade JPA.
 @Table(name = ""): Especifica o nome da tabela no banco de dados.
