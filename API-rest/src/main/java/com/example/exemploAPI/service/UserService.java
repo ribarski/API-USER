@@ -2,6 +2,7 @@ package com.example.exemploAPI.service;
 
 
 import com.example.exemploAPI.entity.User;
+import com.example.exemploAPI.exception.BadRequestException;
 import com.example.exemploAPI.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,7 +25,7 @@ public class UserService {
 
     public User getUserById(Long id) {
         return userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Usuario não encontrado"));
+                .orElseThrow(() -> new BadRequestException("Usuario não encontrado"));
     }
 
     public User save(User user){
